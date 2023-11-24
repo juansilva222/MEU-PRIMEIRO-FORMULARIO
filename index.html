@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Meu Formulário</title>
+</head>
+<body id="body">
+    <h1 id="Titulo"> RESULTADO COMPLETO</h1>
+        <div class="container">
+        <form action="processar_formulário" method="post" id="formulário">
+        <br>
+
+        <label for="Nome">Nome:</label>
+        <input type="Nome" id="Nome" name="Nome" required>
+        <br>
+
+            <label for="Email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="mensagem"> Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"
+                        rows="4" cols="50" required>
+            </textarea>
+            <br>
+
+            <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="BRASIL">BRASIL</option>
+                    <option value="EUA">EUA</option>
+                    <option value="CANADA">CANADA</option>
+                    <option value="OUTRO">OUTRO</option>
+                </select>
+                <br>
+
+            <label for="fruta">Escolha uma fruta:</label>
+            <input list="frutas" id="fruta" name="fruta">
+                <datalist id="frutas">
+                    <option value="Maçã">
+                    <option value="Banana">
+                    <option value="Pêra">
+                    <option value="laranja">
+                    <option value="Uva">
+                </datalist>
+                <br>
+
+                <button type="submit" id="botão">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
